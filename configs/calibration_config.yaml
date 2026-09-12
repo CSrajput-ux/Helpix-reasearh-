@@ -1,0 +1,18 @@
+# HELPix-R Calibration Configuration
+# ==================================
+
+calibration:
+  method: "Temperature Scaling"
+  split_used_for_fitting: "validation"
+  prohibited_splits: ["internal_test", "external_test"]
+  initial_temperature: 1.50
+  min_temperature: 0.05
+  optimizer: "L-BFGS"
+  learning_rate: 0.01
+  max_iter: 50
+  criterion: "CrossEntropyLoss"
+  reported_fitted_temperature: 1.1799
+
+evaluation:
+  ece_bins: 10
+  strategy: "uniform"

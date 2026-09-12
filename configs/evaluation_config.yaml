@@ -1,0 +1,39 @@
+# HELPix-R Evaluation Configuration
+# =================================
+
+evaluation:
+  metrics:
+    - "AUROC"
+    - "Sensitivity"
+    - "Specificity"
+    - "F1"
+    - "ECE"
+    - "Brier"
+  ece_bins: 10
+  decision_threshold: 0.50
+
+bootstrap:
+  enabled: true
+  n_resamples: 1000
+  confidence_level: 0.95
+  seed: 42
+
+uncertainty:
+  method: "MC-Dropout"
+  n_forward_passes: 20
+  dropout_active: true
+  batch_norm_eval: true
+
+explainability:
+  method: "Grad-CAM"
+  target_layer: "features[-2]"
+  deletion_test:
+    masking_percentage: 0.40
+    n_samples: 30
+    reported_mean_drop: 0.0723
+    reported_median_drop: 0.0487
+
+external_test:
+  cohort: "PAD-UFES-20"
+  modality: "smartphone_clinical"
+  sample_size: 654

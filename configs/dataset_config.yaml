@@ -1,0 +1,83 @@
+# HELPix-R Dataset Configuration
+# ==============================
+# Defines dataset sources, preprocessing specifications, deduplication, and leakage-controlled splitting.
+
+datasets:
+  development:
+    - name: "ISIC 2024 SLICE-3D"
+      source: "ISIC Archive / SLICE-3D 3D-TBP"
+      modality: "dermoscopic"
+      raw_images: 401059
+      exact_duplicates_removed: 0
+      retained_images: 401059
+      path: "data/raw/ISIC_2024"
+    - name: "HAM10000"
+      source: "ViDIR Group, Medical University of Vienna / Cliff Rosendahl, Queensland"
+      modality: "dermoscopic"
+      raw_images: 10015
+      exact_duplicates_removed: 2
+      retained_images: 10013
+      path: "data/raw/HAM10000"
+
+  excluded_from_development:
+    - name: "BCN20000"
+      source: "Hospital Clinic de Barcelona"
+      modality: "dermoscopic"
+      raw_records: 10015
+      local_images_found: 7704
+      unique_hashes: 7690
+      exact_duplicates_with_ham10000: 7690
+      retained_images: 0
+      exclusion_rationale: >
+        Local audit revealed that all 7,690 indexed BCN20000 image hashes were byte-identical 
+        (SHA-256) to HAM10000 images in the local repository. Excluded from development to 
+        prevent redundant representation. Note: This finding applies strictly to the local 
+        repository audit and does not claim global duplication across full external BCN20000 archives.
+
+  external_test:
+    - name: "PAD-UFES-20"
+      source: "Federal University of Espirito Santo (UFES), Brazil"
+      modality: "smartphone_clinical"
+      original_dataset_records: 2298
+      local_images_found: 659
+      exact_duplicates_removed: 5
+      retained_images: 654
+      path: "data/external_test/PAD-UFES-20"
+
+harmonization:
+  task: "binary_malignancy"
+  classes:
+    0: "non_malignant"
+    1: "malignant"
+  malignant_labels: ["MEL", "BCC", "SCC"]
+  non_malignant_labels: ["NV", "BKL", "AK", "DF", "VASC"]
+
+splitting:
+  seed: 42
+  target_ratios:
+    train: 0.70
+    validation: 0.15
+    internal_test: 0.15
+  grouping_priority:
+    1: "lesion_id"
+    2: "patient_id"
+    3: "image_id"
+  reported_counts:
+    train:
+      images: 303419
+      unique_groups: 21346
+    validation:
+      images: 52523
+      unique_groups: 4574
+    internal_test:
+      images: 55130
+      unique_groups: 4575
+    external_test:
+      images: 654
+      unique_groups: 526
+
+quality_gate:
+  enabled_in_final_training: false
+  note: >
+    The quality gate module is an optional utility provided in src/data/quality_gate.py. 
+    It was NOT part of the reported final training pipeline.
