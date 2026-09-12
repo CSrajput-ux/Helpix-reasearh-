@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.14-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-ee4c2c.svg)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-[CONFIRMATION_PENDING]-lightgrey.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-[PENDING_RELEASE]-yellow.svg)](docs/BMC_CODE_AVAILABILITY_PREPUBLICATION.md)
 
 This is a reproducibility-oriented scientific research repository containing the code and derived artifacts required to reproduce the reported analysis for:
@@ -267,7 +267,7 @@ Please see [CITATION.cff](CITATION.cff) for citation metadata format.
 ---
 
 ## License
-The software license for this research codebase is documented in [LICENSE](LICENSE).
+This project's software and source code are licensed under the **[MIT License](LICENSE)**.
 
 **The repository license applies only to the original software/code contained in this repository and does not grant rights to redistribute or reuse third-party datasets.**
 Third-party datasets used in this study (ISIC 2024, HAM10000, PAD-UFES-20, BCN20000) remain subject to their respective original licenses and access terms.

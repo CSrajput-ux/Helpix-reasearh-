@@ -1,13 +1,34 @@
-[SOFTWARE LICENSE TO BE CONFIRMED]
+MIT License
 
-Copyright (c) 2026 Chhotu, Dr. Rishi Gupta.
+Copyright (c) 2026 Chhotu, Dr. Rishi Gupta
 
-IMPORTANT NOTICE REGARDING SOFTWARE AND DATA LICENSES:
-1. This file governs ONLY the original research source code and scripts contained in this repository.
-2. The software license is currently pending formal confirmation by the authors and their institutions.
-3. This license DOES NOT apply to, nor does it grant rights over, the underlying third-party datasets used in this study:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+IMPORTANT NOTICE REGARDING SOFTWARE AND THIRD-PARTY DATA LICENSES:
+1. This MIT License governs ONLY the original research software, scripts, and
+   code written by the authors in this repository.
+2. This license DOES NOT apply to, nor does it grant rights over, the underlying
+   third-party clinical or dermatoscopic image datasets used in this study:
    - ISIC 2024 SLICE-3D is distributed under CC0 / Creative Commons terms by the ISIC Archive.
    - HAM10000 is distributed under CC BY-NC 4.0 by the Medical University of Vienna and ViDIR Group.
    - PAD-UFES-20 is distributed under CC BY 4.0 by the Federal University of Espírito Santo (UFES).
    - BCN20000 is distributed under its respective institutional terms by Hospital Clínic de Barcelona.
-4. Users of this repository must independently adhere to the terms and access conditions of each original dataset repository.
+3. Users of this software must independently verify and adhere to the respective
+   licenses, terms of access, and attribution requirements of each dataset consortium.

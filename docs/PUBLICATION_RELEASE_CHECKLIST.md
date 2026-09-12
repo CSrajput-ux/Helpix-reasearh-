@@ -16,8 +16,8 @@ This checklist must be verified before submitting the manuscript to *BMC Medical
 ---
 
 ## 2. Licensing & Governance
-- [ ] **Software License Confirmed**: Authors must select and confirm the open-source software license (e.g., MIT or Apache 2.0) to replace `[SOFTWARE LICENSE TO BE CONFIRMED]`.
-- [ ] **Dataset Licenses Distinct**: Confirm that original dataset licenses (CC0, CC BY-NC 4.0, CC BY 4.0) are documented separately from the code license.
+- [x] **Software License Confirmed**: Software is released under the permissive MIT License (see LICENSE).
+- [x] **Dataset Licenses Distinct**: Confirm that original dataset licenses (CC0, CC BY-NC 4.0, CC BY 4.0) are documented separately from the code license.
 - [ ] **CITATION.cff Review**: Confirm author affiliations and details before final tagging.
 
 ---
