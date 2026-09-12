@@ -1,0 +1,5 @@
+split,images,percent_of_development,unique_groups
+Train,303419,73.81164370231978,21346
+Validation,52523,12.777080414136696,4574
+Internal Test,55130,13.411275883543517,4575
+External Test (PAD-UFES-20),654,,526

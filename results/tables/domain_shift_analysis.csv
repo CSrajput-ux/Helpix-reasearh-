@@ -1,0 +1,5 @@
+metric,internal_dermoscopy,external_smartphone,delta_absolute_points,interpretation
+AUROC,0.9778,0.6451,-0.3327,Discrimination decreased by 0.3327 absolute points under smartphone-domain shift
+ECE (Expected Calibration Error),0.0054,0.165,0.1596,Calibration error increased by 0.1596 absolute points due to out-of-distribution optical shift
+Sensitivity,0.7865,0.4808,-0.3057,Malignancy sensitivity dropped by 30.57 percentage points
+Specificity,0.991,0.7311,-0.2599,False positive control dropped by 25.99 percentage points

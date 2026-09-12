@@ -1,0 +1,6 @@
+Dataset,Modality,Raw Records,Images on Disk,Unique Patients/Groups,Malignant Cases,Non-Malignant Cases,Exact Duplicates Removed,Retained for Analysis,Pipeline Role
+ISIC 2024 (SLIC-30 / 3D TBP),Dermoscopy (Polarized / Non-polarized),401059,401059,28383,393,400666,0,401059,"Development (Train, Val, Internal Test)"
+HAM10000,Dermoscopy (Multi-center Vienna/Graz),10015,10015,7470,1627,8386,2,10013,"Development (Train, Val, Internal Test)"
+BCN20000,Dermoscopy (Clinic Barcelona),10015,7704,Overlaps HAM,Overlaps HAM,Overlaps HAM,7690,0,Deduplicated (100% exact byte duplicates of HAM10000)
+PAD-UFES-20,Clinical Photography (Smartphone),2298,659,526,416,238,5,654,External Test (Out-of-Distribution Shift)
+Total Harmonized Pool,Dermoscopy & Clinical Smartphone,423387,419437,36379,2436,409290,7697,411726,Complete Benchmark Cohort
