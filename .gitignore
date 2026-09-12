@@ -49,13 +49,14 @@ models/*.pth
 *.gz
 
 # Raw Image Datasets (NO REDISTRIBUTION OF PROPRIETARY / LICENSED DATASETS)
-data/
-data/raw/
-data/external_test/
-data/processed/
+/data/
+/data/raw/
+/data/external_test/
+/data/processed/
 *.jpg
 *.jpeg
-data/**/*.png
+/data/**/*.png
+!src/data/
 
 # Allow only publication figures in results/figures/
 !results/figures/
