@@ -1,0 +1,78 @@
+# ==============================================================================
+# HELPix-R Strict Research Gitignore
+# Excludes raw datasets, checkpoints, credentials, and temp caches
+# ==============================================================================
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Environments & Packaging
+venv/
+env/
+ENV/
+.conda/
+*.egg-info/
+dist/
+build/
+
+# IDE, OS, and Temporary files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+cache/
+tmp/
+temp/
+scratch/
+
+# Model Checkpoints & Large Weights (Archive on Zenodo, do not push to GitHub)
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+models/*.pt
+models/*.pth
+
+# Compressed Dataset Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.gz
+
+# Raw Image Datasets (NO REDISTRIBUTION OF PROPRIETARY / LICENSED DATASETS)
+data/
+data/raw/
+data/external_test/
+data/processed/
+*.jpg
+*.jpeg
+data/**/*.png
+
+# Allow only publication figures in results/figures/
+!results/figures/
+!results/figures/*.png
+
+# Allow result tables and metrics in results/
+!results/tables/
+!results/tables/*.csv
+!results/metrics/
+!results/metrics/*.csv
+
+# Credentials, Secrets, and Tokens (CRITICAL SECURITY)
+.env*
+*.key
+*.pem
+*secret*.json
+*credential*.json
+client_secret*.json
+service-account*.json
+token*.json

@@ -1,0 +1,13 @@
+[SOFTWARE LICENSE TO BE CONFIRMED]
+
+Copyright (c) 2026 Chhotu, Dr. Rishi Gupta.
+
+IMPORTANT NOTICE REGARDING SOFTWARE AND DATA LICENSES:
+1. This file governs ONLY the original research source code and scripts contained in this repository.
+2. The software license is currently pending formal confirmation by the authors and their institutions.
+3. This license DOES NOT apply to, nor does it grant rights over, the underlying third-party datasets used in this study:
+   - ISIC 2024 SLICE-3D is distributed under CC0 / Creative Commons terms by the ISIC Archive.
+   - HAM10000 is distributed under CC BY-NC 4.0 by the Medical University of Vienna and ViDIR Group.
+   - PAD-UFES-20 is distributed under CC BY 4.0 by the Federal University of Espírito Santo (UFES).
+   - BCN20000 is distributed under its respective institutional terms by Hospital Clínic de Barcelona.
+4. Users of this repository must independently adhere to the terms and access conditions of each original dataset repository.
