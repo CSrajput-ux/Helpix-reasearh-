@@ -3,14 +3,14 @@
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.14-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-[PENDING_RELEASE]-yellow.svg)](docs/BMC_CODE_AVAILABILITY_PREPUBLICATION.md)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22728737-blue.svg)](https://doi.org/10.5281/zenodo.22728737)
 
 This is a reproducibility-oriented scientific research repository containing the code and derived artifacts required to reproduce the reported analysis for:
 
 > **Reliability-Oriented Binary Skin-Lesion Malignancy Classification Using HELPix-R: A Leakage-Controlled Deep-Learning Framework With Calibration, Explainability, and External Testing**  
 > *Target Journal*: BMC Medical Imaging  
-> *Authors*: Chhotu<sup>1</sup>, Dr. Rishi Gupta<sup>2</sup>  
-> <sup>1</sup>Manipal University Jaipur; <sup>2</sup>[AFFILIATION TO BE CONFIRMED]
+> *Authors*: Chhotu Rajput<sup>1</sup>, Dr. Rishi Gupta<sup>2</sup>  
+> <sup>1</sup>Manipal University Jaipur; <sup>2</sup>Affiliation as listed in the publication record
 
 ---
 
@@ -241,7 +241,7 @@ python scripts/generate_figures.py
 
 ## Model Checkpoints & Archival Strategy
 - The trained HELPix-R model checkpoint (`helpix_r_best.pt`, 16.9 MB) and baseline checkpoints are not tracked directly in Git to prevent repository bloat and maintain lightweight cloning.
-- **Release Strategy**: The final model weights (`helpix_r_best.pt`) will be archived alongside the release code on Zenodo under a persistent DOI upon publication. Users wishing to evaluate the pre-trained model without retraining can download the checkpoint from Zenodo and place it in `results/` or `models/`.
+- **Zenodo v1.0.0**: The v1.0.0 research software release has been archived on Zenodo under the persistent DOI [10.5281/zenodo.22728737](https://doi.org/10.5281/zenodo.22728737).
 - **Retraining Option**: The complete pipeline can be retrained from scratch using `scripts/train.py --config configs/training_config.yaml --model helpix_r`.
 
 ---
@@ -252,7 +252,12 @@ Raw image datasets are subject to third-party distribution terms and are not red
 ---
 
 ## Code Availability
-Please see [BMC_CODE_AVAILABILITY_PREPUBLICATION.md](docs/BMC_CODE_AVAILABILITY_PREPUBLICATION.md) and [BMC_CODE_AVAILABILITY_FINAL.md](docs/BMC_CODE_AVAILABILITY_FINAL.md) for official manuscript paragraphs.
+The HELPix-R source repository is publicly available on GitHub, and the v1.0.0 research software release is archived on Zenodo for persistent access and reproducibility.
+
+- **GitHub repository**: https://github.com/CSrajput-ux/Helpix-reasearh-
+- **Zenodo v1.0.0 DOI**: https://doi.org/10.5281/zenodo.22728737
+
+For manuscript-specific wording, see [BMC_CODE_AVAILABILITY_PREPUBLICATION.md](docs/BMC_CODE_AVAILABILITY_PREPUBLICATION.md) and [BMC_CODE_AVAILABILITY_FINAL.md](docs/BMC_CODE_AVAILABILITY_FINAL.md).
 
 ---
 
